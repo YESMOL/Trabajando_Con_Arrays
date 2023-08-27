@@ -38,6 +38,11 @@ const strangeArray = [
   
   document.addEventListener("DOMContentLoaded", (e) => {
     // Escribe tu solución aquí
+    const Strings = strangeArray.filter(item => typeof item === "string");
+    Strings.sort();
+    
+    showList(Strings.sort());
+   
     // Sugerencia de cómo mostrar el array => showList(strangeArray);
   });
   
